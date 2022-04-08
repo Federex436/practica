@@ -8,39 +8,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
-        <label for="">Nombre</label>
-      <input placeholder="Ingrese su nombre">
-    </p>
+    <form>
+        <p>
+            <label>Nombre</label>
+            <input type="text" required autofocus>
+        </p>
 
-    <p>
-      <label for="">Apellido</label>
-      <input placeholder="Ingrese su apellido">  
-    </p>
+        <p>
+            <label>Email</label>
+            <input type="email" required>
+        </p>
+        
+        <p>
+            <label>URL</label>
+            <input type="url" placeholder="Escriba la URL de tu pagina web personal">
+        </p>
 
-    <p>
-        <label>Sexo</label>
-        <input type="radio" name="its">
-        <label>Masculino</label>
-        <input type="radio" name="its">
-        <label>Fememnino</label>
-    </p>
+        <p>
+            <label>Fecha</label>
+            <input type="date">
+        </p>
+   
+        <p>
+            <label>Tiempo</label>
+            <input type="time">
+        </p>
 
-    <p>
-        <label for="">Correo</label>
-        <input placeholder="Ingrese su email o gmail">
-    </p>
+        <p>
+            <label>Fecha y hora</label>
+            <input type="datetime-local">
+        </p>
+        
+        <p>
+            <label>Mes</label>
+            <input type="month">
+        </p>
 
-    <p>
-        <input type="checkbox">
-        <label >Deseo recibir informacion sobre novedades y ofertas</label>
-    </p>
+        <p>
+            <label>Semana</label>
+            <input type="week">
+        </p>
+   
+        <p>
+            <label>Fecha</label>
+            <input type="date">
+        </p>
+   
+        <p>
+            <label>Numero (min -10 max 10)</label>
+            <input type="number" min="-10" max="10">
+        </p>
 
-    <p>
-        <input type="checkbox">
-        <label >Declaro haber leido y aceptado las condiciones generales del programa y la normativa sobre proteccion de datos</label>
-    </p>
+        <p>
+            <label>Telefono</label>
+            <input type="tel">
+        </p>
 
-    <button>Enviar</button>
+        <p>
+            <label>Busqueda</label>
+            <input type="search">
+        </p>
+
+        <p>
+            <label>Color favorito</label>
+        <input type="color">
+        </p>
+
+        <button type="submit">Enviar</button>
+    </form>
+
 </body>
 </html>
