@@ -8,3 +8,7 @@ if (numero == 10) {
     console.log(numero)
 }
 console.log(numero)
+
+
+//caso 2
+
