@@ -56,16 +56,10 @@ console.log(copia.push('Go'))
 console.log('arreglo copia: '+copia)
 console.log('original: '+arreglo)
 
-
-
-
-
-
-
-
-
-
-
+//agregar elementos por indice
+//siempre dejar la cantidad de elementos en 0
+arreglo.splice(1,0."Java")
+console.log(arreglo)
 
 //funcion tradicional
 function operar (){
