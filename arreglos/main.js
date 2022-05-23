@@ -25,7 +25,7 @@ console.log(arreglo)
 arreglo.pop()
 console.log(arreglo)
 
-//como arreglar un elemento al inicio de un array
+//como agregar un elemento al inicio de un array
 arreglo.unshift('Go')
 console.log(arreglo)
 
@@ -52,13 +52,14 @@ console.log('elemento eliminado: '+eliminacion)
 //generar copia de un arreglo
 let copia = arreglo.slice()
 console.log(copia.push('Go'))
-//cuando concatenamos un arra con un string todo se traduce a una cadena de texto
+
+//cuando concatenamos un array con un string todo se traduce a una cadena de texto
 console.log('arreglo copia: '+copia)
 console.log('original: '+arreglo)
 
 //agregar elementos por indice
 //siempre dejar la cantidad de elementos en 0
-arreglo.splice(1,0."Java")
+arreglo.splice(1,0,"Java")
 console.log(arreglo)
 
 //funcion tradicional
