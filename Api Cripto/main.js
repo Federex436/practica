@@ -14,10 +14,12 @@ async function crypto_hoy(){
         //enganiamos a HTML para escribir codigo HTML y poder hacer que se actualize todo el tiempo la tabla
         let fila = `
             <tr>
-                <td>${index+1}</td>
-                <td>${element.casa.nombre}</td>
-                <td>$${element.casa.compra}</td>
-                <td>$${element.casa.venta}</td>
+                <td>${index}</td>
+                <td>${element.image.name}</td>
+                <td>${element.image.symbol}</td>
+                <td>${element.image.current_price}</td>
+                <td>${element.image.price_change_percentage_24h}</td>
+                <td>${element.image.total_volume}</td>
     
             </tr>
         `
