@@ -7,11 +7,7 @@ async function dolar_hoy(){
     let filas = []
     
     datos.forEach((element, index) => {      
-        //console.log(`
-        //    ${element.casa.nombre} - Compra: ${element.casa.compra} - Venta:  ${element.casa.venta}
-        //`)     
 
-        //enganiamos a HTML para escribir codigo HTML y poder hacer que se actualize todo el tiempo la tabla
         let fila = `
             <tr>
                 <td>${index+1}</td>
@@ -23,9 +19,6 @@ async function dolar_hoy(){
         `
         filas.push(fila)
     });
-//busca el elemento que se creo en tbody por id y copia todo como si fuera html sacando las comillas invertidas
     document.getElementById("tbody").innerHTML = filas.join('')
 }
 dolar_hoy()
-
-//Comento el console log por el ejercico que tamos viendo
