@@ -88,6 +88,9 @@ function ACTUALIZAR_CLIENTE(){
     document.getElementById("btn_guardar").style.display = 'block'
     document.getElementById("btn_actualizar").style.display = 'none'
 
-    document.getElementById("form_cliente").reset() 
+    document.getElementById("form_cliente").reset()
 }
 document.getElementById("btn_actualizar").addEventListener("click",ACTUALIZAR_CLIENTE)
+
+
+OBTENER_CLIENTES()
