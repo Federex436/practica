@@ -1,10 +1,9 @@
 function GUARDAR(){
 
     let n_cliente = {
-        direccionip:document.getElementById("direccionip").value,
+        ip:document.getElementById("ip").value,
         puerto:document.getElementById("puerto").value,
         pais:document.getElementById("pais").value,
-        ciudad:document.getElementById("ciudad").value,
         velocidad:document.getElementById("velocidad").value,
         tipo:document.getElementById("tipo").value
     }
@@ -31,10 +30,9 @@ function OBTENER_CLIENTES(){
             let fila = `
                 <tr>
                     
-                    <td>${element.direccionip}</td>
+                    <td>${element.ip}</td>
                     <td>${element.puerto}</td>
                     <td>${element.pais}</td>
-                    <td>${element.ciudad}</td>
                     <td>${element.velocidad}</td>
                     <td>${element.tipo}</td>
                     <td>
@@ -59,10 +57,9 @@ function ELIMINAR_CLIENTE(index){
 
 function EDITAR_CLIENTE(index){
     let lista_clientes = JSON.parse( localStorage.getItem("lista_clientes"))
-    document.getElementById("direccionip").value = lista_clientes[index].direccionip
+    document.getElementById("ip").value = lista_clientes[index].ip
     document.getElementById("puerto").value = lista_clientes[index].puerto
     document.getElementById("pais").value = lista_clientes[index].pais
-    document.getElementById("ciudad").value = lista_clientes[index].ciudad
     document.getElementById("velocidad").value = lista_clientes[index].velocidad
     document.getElementById("tipo").value = lista_clientes[index].tipo
 
@@ -78,10 +75,9 @@ function ACTUALIZAR_CLIENTE(){
 
     let lista_clientes = JSON.parse( localStorage.getItem("lista_clientes"))
 
-    lista_clientes[indice].direccionip = document.getElementById("direccionip").value
+    lista_clientes[indice].ip = document.getElementById("ip").value
     lista_clientes[indice].puerto = document.getElementById("puerto").value
     lista_clientes[indice].pais = document.getElementById("pais").value
-    lista_clientes[indice].ciudad = document.getElementById("ciudad").value
     lista_clientes[indice].velocidad = document.getElementById("velocidad").value
     lista_clientes[indice].tipo = document.getElementById("tipo").value
 
